@@ -19,6 +19,8 @@ A tool to scrape donderhiroba 10 star score page to import to a csv file
   
 3) Run main.py
 4) if out put looks like this:
+
+
    ![image](https://github.com/GamerMario54321/10_star_tracker/assets/57037116/17a7124a-07ce-4473-b55f-16fdecd6346f)
 
 
