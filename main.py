@@ -244,7 +244,7 @@ def main():
 
     with alive_bar(monitor=None, stats=None, title="Writing csv   "):
         csv_file_path = os.path.join(os.path.dirname(__file__), "Scorelist.csv")
-        with open(csv_file_path + 'dict.csv', 'w', encoding="utf8", newline="") as csv_file:  
+        with open(csv_file_path, 'w', encoding="utf8", newline="") as csv_file:  
             writer = csv.writer(csv_file, delimiter=',' )
             writer.writerows(final)
         
