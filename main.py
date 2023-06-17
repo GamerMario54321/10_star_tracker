@@ -12,6 +12,11 @@ from alive_progress import alive_bar
 import json
 import os
 import csv
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
 login_file_path = os.path.join(os.path.dirname(__file__), "login.json")
 login = json.load(open(login_file_path, encoding="utf8"))
