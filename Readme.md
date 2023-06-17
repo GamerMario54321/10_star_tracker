@@ -9,9 +9,9 @@ A tool to scrape donderhiroba 10 star score page to import to a csv file
 # How to use
 1) open login.json
 2) put your email and password in login.json
-
-
   example:
+
+
   ![image](https://github.com/GamerMario54321/10_star_tracker/assets/57037116/c187f15c-a0d2-4f33-891e-5fae29e839bd)
 
   
