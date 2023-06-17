@@ -15,14 +15,12 @@ import csv
 import subprocess
 import sys
 
-def install(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-
 login_file_path = os.path.join(os.path.dirname(__file__), "login.json")
 login = json.load(open(login_file_path, encoding="utf8"))
 EMAIL = login["email"]
 PASSWORD = login["password"]
 TAIKO_NO = login["taiko_no"]
+subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
 
 def main():
     with alive_bar(monitor=None, stats=None, title="Login to DH.jp"):
@@ -62,7 +60,7 @@ def main():
             except NoSuchElementException:
                 pass
 
-    dict_header = ["score", "good", "ok", "miss", "maxcombo", "drumroll"]
+    dict_header = ["name", "score", "good", "ok", "miss", "maxcombo", "drumroll"]
     dict_info = []
 
     json_file_path = os.path.join(os.path.dirname(__file__), "10star_list.json")
