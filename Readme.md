@@ -10,10 +10,10 @@ A tool to scrape donderhiroba 10 star score page to import to a csv file
 1) open login.json
 2) put your email and password in login.json
   example:
-  {
-    "email": "example@email.com",
-    "password": "password1234",
-    "taiko_no": ""
+  {\n
+    "email": "example@email.com",\n
+    "password": "password1234",\n
+    "taiko_no": ""\n
   }
   
 3) Run main.py
