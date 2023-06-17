@@ -24,6 +24,7 @@ PASSWORD = login["password"]
 TAIKO_NO = login["taiko_no"]
 
 def main():
+    os.system('cls' if os.name=='nt' else 'clear')
     with alive_bar(monitor=None, stats=None, title="Login to DH.jp"):
         options = Options()
         options.add_argument("--headless")
