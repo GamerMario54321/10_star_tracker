@@ -1,3 +1,7 @@
+import subprocess
+import sys
+subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
+
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.firefox.options import Options
@@ -12,15 +16,12 @@ from alive_progress import alive_bar
 import json
 import os
 import csv
-import subprocess
-import sys
 
 login_file_path = os.path.join(os.path.dirname(__file__), "login.json")
 login = json.load(open(login_file_path, encoding="utf8"))
 EMAIL = login["email"]
 PASSWORD = login["password"]
 TAIKO_NO = login["taiko_no"]
-subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
 
 def main():
     with alive_bar(monitor=None, stats=None, title="Login to DH.jp"):
