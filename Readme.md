@@ -18,5 +18,5 @@ A tool to scrape donderhiroba 10 star score page to import to a csv file
 3) Run main.py
 
 Optional
-1)put taiko number if getting another players stats
-2)leave blank if you are not tracking another player
+- put taiko number if getting another players stats
+- leave blank if you are not tracking another player
