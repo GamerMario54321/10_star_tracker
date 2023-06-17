@@ -12,7 +12,8 @@ A tool to scrape donderhiroba 10 star score page to import to a csv file
   example:
 
 
-  
+  ![image](https://github.com/GamerMario54321/10_star_tracker/assets/57037116/9e038ff7-2123-461c-a334-f21ed2a7c944)
+
 
 
   
