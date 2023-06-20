@@ -1,2 +1,0 @@
-selenium
-alive_progress
