@@ -37,7 +37,7 @@ def main_scraper(TAIKO_NO, message):
     print("login for " + TAIKO_NO)
     options = Options()
     options.add_argument("--headless")
-    options.binary_location = r'C:\Users\P1357325\AppData\Local\Mozilla Firefox\firefox.exe'
+    #options.binary_location = r'C:\Users\P1357325\AppData\Local\Mozilla Firefox\firefox.exe'
     driver = webdriver.Firefox(options=options)
     driver.get('https://account.bandainamcoid.com/login.html?client_id=nbgi_taiko&customize_id=&redirect_uri=https%3A%2F%2Fwww.bandainamcoid.com%2Fv2%2Foauth2%2Fauth%3Fback%3Dv3%26client_id%3Dnbgi_taiko%26scope%3DJpGroupAll%26redirect_uri%3Dhttps%253A%252F%252Fdonderhiroba.jp%252Flogin_process.php%253Finvite_code%253D%2526abs_back_url%253D%2526location_code%253D%26text%3D&prompt=login')
     WebDriverWait(driver, timeout=10).until(EC.presence_of_element_located((By.ID, "mail")))
