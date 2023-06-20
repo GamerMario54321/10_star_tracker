@@ -1,5 +1,6 @@
 {
     "email": "",
     "password": "",
-    "taiko_no": ""
+    "token": "",
+    "bot_username": ""
 }
